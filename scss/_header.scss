@@ -1,0 +1,98 @@
+.header {
+   background-color: #52626e;
+   &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 25px 0 65px;
+      &__logo {
+         font-family: Pacifico;
+         font-size: 3.1em;
+         line-height: 1.6;
+         font-weight: 400;
+         text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+         color: #ffffff;
+      }
+      &__list {
+         display: flex;
+         justify-content: space-between;
+         max-width: 320px;
+         width: 100%;
+      }
+      &__link {
+         font-size: 1.5em;
+         line-height: 2.2;
+         letter-spacing: 0.1em;
+         text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+         color: #ffffff;
+      }
+   }
+   &-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      &__img {
+         max-width: 390px;
+         img {
+            width: 100%;
+         }
+      }
+   }
+   &-content {
+      max-width: 467px;
+      padding-bottom: 30px;
+      &__title {
+         font-family: $ff-bold;
+         font-size: 4.8em;
+         line-height: 0.9;
+         color: #ffffff;
+      }
+      &__subtitle {
+         font-family: $ff-regular;
+         font-weight: 600;
+         font-size: 1.6em;
+         letter-spacing: 0.1em;
+         line-height: 1.7;
+         color: #dcdcdc;
+         padding-top: 15px;
+      }
+      &__text {
+         font-size: 1.6em;
+         letter-spacing: 0.05em;
+         line-height: 2.1;
+         color: #a0a0a0;
+         padding: 15px 0 50px;
+      }
+      &__footer {
+         display: flex;
+         align-items: center;
+      }
+      &__btn {
+         padding: 9px 47px;
+         background-color: #3d94d1;
+         font-family: $ff-regular;
+         font-size: 1.4em;
+         line-height: 2;
+         font-weight: 600;
+         letter-spacing: 0.1em;
+         border-radius: 50px;
+         color: #ffffff;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+      }
+      &__between {
+         font-size: 1.5em;
+         line-height: 2.1;
+         color: #ffffff;
+         margin: 0 17px;
+      }
+      &__see-work {
+         font-family: $ff-medium;
+         font-size: 1.5em;
+         line-height: 1.4;
+         color: #ffffff;
+         border-bottom: 1px solid #ffffff;
+      }
+   }
+}

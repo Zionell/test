@@ -1,0 +1,133 @@
+// FONTS
+@font-face {
+   font-family: "Helvetica-regular";
+   src: url("../fonts/HelveticaNeue\ Regular.eot") format("embedded-opentype"),
+      url("../fonts/HelveticaNeue\ Regular.otf") format("otf"),
+      url("../fonts/HelveticaNeue\ Regular.woff") format("woff"),
+      url("../fonts/HelveticaNeue\ Regular.ttf") format("ttf");
+}
+@font-face {
+   font-family: "Helvetica-bold";
+   src: url("../fonts/helveticaneuecyr-bold.eot") format("embedded-opentype"),
+      url("../fonts/helveticaneuecyr-bold.otf") format("otf"), url("../fonts/helveticaneuecyr-bold.woff") format("woff"),
+      url("../fonts/helveticaneuecyr-bold.ttf") format("ttf");
+}
+@font-face {
+   font-family: "Helvetica-medium";
+   src: url("../fonts/HelveticaNeueCyr-Medium.eot") format("embedded-opentype"),
+      url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+      url("../fonts/HelveticaNeueCyr-Medium.ttf") format("ttf");
+}
+@font-face {
+   font-family: "Pacifico";
+   src: url("../fonts/Pacifico.eot") format("embedded-opentype"), url("../fonts/Pacifico.otf") format("otf"),
+      url("../fonts/Pacifico.woff") format("woff"), url("../fonts/Pacifico.ttf") format("ttf");
+}
+
+$ff-regular: "Helvetica-regular", sans-serif;
+$ff-medium: "Helvetica-medium", sans-serif;
+$ff-bold: "Helvetica-bold", sans-serif;
+// Width
+$desktopwidth: 1020px;
+$level_1: 1120px;
+$level_2: 950px;
+$level_3: 768px;
+// $level_5: 800px;
+// $level_6: 700px;
+// $level_7: 600px;
+$level_7: 320px;
+
+.container {
+   max-width: $desktopwidth;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+section,
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   font-size: 10px;
+   font-family: $ff-regular, sans-serif;
+   min-width: $level_7;
+   min-height: 100vh;
+   width: 100%;
+   line-height: 1;
+}
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+input::-ms-clear {
+   display: none;
+}
+// Для iphone
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+// Конец
+// Убрать/невидимка стрелочку у input
+input::-webkit-calendar-picker-indicator {
+   opacity: 0;
+}
+// Конец
+
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+/*--------------------*/
