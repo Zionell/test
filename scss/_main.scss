@@ -4,10 +4,10 @@
    border-bottom: 1px solid #c3c3c3;
    &__wrapp {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 25px;
       padding: 15px 0;
    }
 }

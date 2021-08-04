@@ -371,15 +371,15 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
   padding: 15px 0;
 }
 
@@ -851,6 +851,11 @@ h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 5px;
+  }
+  .dummy__wrapp {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .from-blog__feed {
     -webkit-box-orient: vertical;
