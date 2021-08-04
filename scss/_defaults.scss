@@ -32,15 +32,30 @@ $desktopwidth: 1020px;
 $level_1: 1120px;
 $level_2: 950px;
 $level_3: 768px;
-// $level_5: 800px;
-// $level_6: 700px;
-// $level_7: 600px;
-$level_7: 320px;
+$level_4: 500px;
+$level_5: 320px;
 
 .container {
    max-width: $desktopwidth;
    margin: 0 auto;
    padding: 0 15px;
+}
+
+.hover-btn:hover {
+   background-color: #ffffff;
+   color: #257dba;
+   border: 1px solid #3d94d1;
+}
+.hover-header__link:hover {
+   color: #3d94d1;
+   text-decoration: underline;
+}
+.hover-text:hover {
+   color: #4b6374;
+   text-decoration: underline;
+}
+.hover-social:hover {
+   filter: drop-shadow(0 0 6px #0096ff);
 }
 
 /*Обнуление*/
@@ -73,7 +88,7 @@ body {
    justify-content: space-between;
    font-size: 10px;
    font-family: $ff-regular, sans-serif;
-   min-width: $level_7;
+   min-width: $level_5;
    min-height: 100vh;
    width: 100%;
    line-height: 1;

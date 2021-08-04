@@ -31,3 +31,14 @@ btnsSlider.forEach(btn => {
       }
    })
 })
+//burger
+let menu = document.querySelector(".header-top__burger");
+let openMenu = document.querySelector(".header-top__burger-btn");
+let closeMenu = document.querySelector(".header-top__burger-close");
+openMenu.onclick = () => {
+   menu.classList.add("burger-active")
+}
+closeMenu.onclick = () => {
+   menu.classList.remove("burger-active")
+
+}
