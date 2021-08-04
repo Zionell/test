@@ -17,7 +17,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 25px;
+      gap: 30px;
       margin: 95px 0;
    }
    &__card {
@@ -102,7 +102,7 @@
          justify-content: space-between;
          max-width: $desktopwidth;
          width: 100%;
-         min-height: 200px;
+         min-height: 165px;
          position: relative;
          overflow: hidden;
       }
