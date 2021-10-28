@@ -4,6 +4,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 30px;
       margin: 25px 0 65px;
       &__logo {
          font-family: Pacifico;
@@ -12,12 +13,53 @@
          font-weight: 400;
          text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
          color: #ffffff;
+         transition: 0.1s linear;
       }
-      &__list {
+      &__menu {
+         position: relative;
          display: flex;
          justify-content: space-between;
          max-width: 320px;
          width: 100%;
+      }
+      &__list {
+         display: flex;
+         justify-content: space-between;
+         gap: 15px;
+         width: 100%;
+      }
+      &__burger {
+         display: none;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100vw;
+         height: 100vh;
+         overflow: hidden;
+         transition: 0.2s linear;
+         &-close{
+            height: 100vh;
+            width: 75vw;
+         }
+         &-btn {
+            z-index: 7;
+            display: none;
+            margin: 0 20px;
+            font-size: 3em;
+            color: #ffffff;
+         }
+         &-list {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            height: 100vh;
+            width: 40vw;
+            background: #1f2d37;
+            padding: 10px 15px;
+            right: -150px;
+            transition: 0.2s linear;
+            font-size: 2em;
+         }
       }
       &__link {
          font-size: 1.5em;
@@ -25,6 +67,7 @@
          letter-spacing: 0.1em;
          text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
          color: #ffffff;
+         transition: .1s linear;
       }
    }
    &-body {
@@ -67,6 +110,7 @@
       &__footer {
          display: flex;
          align-items: center;
+         gap: 20px;
       }
       &__btn {
          padding: 9px 47px;
@@ -76,16 +120,17 @@
          line-height: 2;
          font-weight: 600;
          letter-spacing: 0.1em;
+         border: 1px solid #3d94d1;
          border-radius: 50px;
          color: #ffffff;
          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+         transition: 0.2s linear;
       }
       &__between {
          font-size: 1.5em;
          line-height: 2.1;
          color: #ffffff;
-         margin: 0 17px;
       }
       &__see-work {
          font-family: $ff-medium;
@@ -93,6 +138,18 @@
          line-height: 1.4;
          color: #ffffff;
          border-bottom: 1px solid #ffffff;
+         transition: .1s linear;
+         &:hover{
+            color: #3d94d1;
+            border-bottom: 1px solid #3d94d1;
+         }
       }
+   }
+}
+.burger-active {
+   display: block;
+   background: #999999a8;
+   .header-top__burger-list{
+      right: 0;
    }
 }
